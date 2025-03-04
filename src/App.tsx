@@ -28,11 +28,11 @@ function Todo(props:Todoprop){
     )
 }
 enum keys{
-  Up,Down,Left,Right
+  Up='up',Down='down',Left='left',Right='right'
 }
 function doshit(mousemove:keys):void{
   if(mousemove==keys.Down){
-      console.log('down')
+      console.log(keys.Down)
   }
 }
 doshit(keys.Down)
